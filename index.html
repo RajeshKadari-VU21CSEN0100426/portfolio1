@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website - Rajesh Reddy Kadari</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="a-logo">R</span><span>ajesh</span><span class="dot">. </span>
+                </div>
+                <ul id="sidemenu">
+
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            
+            <div class="header-text">
+            </div>
+           
+        </div>
+    </div>
+    <div class="upper-img">
+        <h1>Hi, I'm <span>Rajesh </span><br> Reddy</h1>
+        <p>Student
+        </p>
+    </div>
+    <!-- ---------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://raw.githubusercontent.com/RajeshKadari-VU21CSEN0100426/Portfolio/df1a6787a7fff377ebbe1eaef13e514e21b03f53/WhatsApp%20Image%202024-03-18%20at%2020.13.36_e5532a54.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p class="about-para">Hii! I am <span>Rajesh</span> Reddy,Iam currently pursuing B.tech 3rd year in CSE department from Gitam engineering College</p>
+
+
+
+                    <div class="tab-tittles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Full Stack Java Developer</li>
+                            <li>Web app Development</li>
+                            <li>Building Android/IOS apps</li>
+                            <li><span>Languages</span><br>-C++<br>-Python<br>-Java<br>-HTML</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span></span>Student.</li>
+                            <li><span>Currently</span><br>I am Persuring B.Tech from Gitam Engineering College.</li>
+                            <li><span>Inter</span><br>12th from PineGroove Junior College.</li>
+                            <li><span>Schooling</span><br>10th from Greenwood High School.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------Portfolio--------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://raw.githubusercontent.com/RajeshKadari-VU21CSEN0100426/Portfolio/775a61769c147ca612e3d541317321b4efab8247/intimg.jpeg.jpg" alt="work">
+                    <div class="layer">
+                        <h3>-Internship-</h3>
+                        <p>My internship certificates</p>
+                        <a target="_blank" href="interncertf.pdf" onclick="openPDF()"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://raw.githubusercontent.com/RajeshKadari-VU21CSEN0100426/Portfolio/df1a6787a7fff377ebbe1eaef13e514e21b03f53/projectimg.jpeg.jpg" alt="work">
+                    <div class="layer">
+                        <h3>Project</h3>
+                        <p>I have done my project in the Spring Board company by Infosys</p>
+                        <a target="_blank" href="projectint.pdf" onclick="openproj()"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openPDF(event){
+            event.preventDefault();
+            var pdf="interncertf.pdf";
+            window.open(pdf,'_blank');
+        }
+    </script>
+    <script>
+        function openproj(event){
+            event.preventDefault();
+            var proj="projectint.pdf";
+            window.open(proj,'_blank');
+        }
+    </script>
+    <!-- ----------Contact Us---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i>rajeshkadari12.in@gmail.com</p> 
+                     <p class="ght"><i class="fas fa-phone-square-alt"></i>9391617045</p>
+                    <div class="social-icons">
+                        <a href=" https://x.com/RajeshKadari9?t=iSzg_ZsT2OluupmSg0jgWA&s=08 " target="href"><i class="fab fa-twitter-square"></i></a>
+                        <a href="www.linkedin.com/in/rajesh-kadari-4732b12b7"target="href"><i class="fab fa-linkedin"></i></a>
+                        <a class="red" href="https://www.instagram.com/invites/contact/?i=xo6zw8dv709v&utm_content=8rx68vg" target="href"><i class="fab fa-instagram"></i></a>
+                        <!-- i have made a change -->
+                    </div>
+                    <a href="Rajesh-Reddy-Kadari-FlowCV-Resume-20240730 (1)" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwtQgyRvMvRW5HUWnvxb3d0p7YIybMwPhkNnQRYssTJDCq9-l4_z08BMb7TCi-ZRePINg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    form.reset()
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
